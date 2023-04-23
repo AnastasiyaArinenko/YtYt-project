@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.container{
+  display: grid;
+  grid-template-areas: "header"
+                        "main"
+                        "footer";
+  grid-template-rows: auto 1fr 200px;
+  background-color: aquamarine;
+}
+
+.header {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.menu {
+  display: flex;
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 20px;
+  margin: 20px;
+  position: relative;
+}
+
+.nav-list {
+  display: flex;
+  list-style-type: none;
+  color: #000000;
+  gap: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #000000;
+}
+
+
+
+.sign-in {
+  background-color: #38bff2;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  padding: 8.87px 6.46px 8.87px 27.62px;
+}
+
+.intro {
+  float: left;
+}
