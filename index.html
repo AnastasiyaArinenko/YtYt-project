@@ -11,12 +11,12 @@
 <body>
     <div class="container">
       <header class="header">
-        <div class="menu">
-          <img  class="img-logo" src="assets/images/logo.png" alt="logo">
+        <div class="header-container">
+          <img  class="img-logo" src="assets/images/logo-img.svg" alt="logo">
 
           <nav>
             <ul class="nav-list">
-              <li><a class="nav-link" href="#youWillLearn">Вы научитесь</a></li>
+              <li><a class="nav-link" href="#youWillLearn">Чему вы научитесь</a></li>
 
               <li><a class="nav-link" href="#learningProcess">Процесс обучения</a></li>
 
@@ -26,24 +26,65 @@
             </ul>
           </nav>
 
-          <button class="registration">Регистрация</button>
+          <div class="header-buttons">
+            <a href="#" class="registration">Регистрация</a>
 
-          <button class="sign-in">Войти</button>
-        </div>
+            <a href="#" class="sign-in"> 
+              <img src="assets/images/arrow-right.png" alt="arrow-right">
+              Войти
+            </a>
 
-        <div class="intro">
-          <h1>Школа программирования для тех, кому нужны реаьные навыки, а не просто сертификат</h1>
-          
-          <p>Пройдите тестирование, чтобы олучить доступ к бесплатным вводным урокам</p>
-
-          <button class="test">Пройти тестирование</button>
-
-          <img src="assets/images/intro-images.png" alt="coding-on-computer">
+            
+          </div>
         </div>
       </header>
 
       <main>
+        <div class="intro">
+          <p class="heading-text">
+            <img class="heading-img" src="assets/images/intro-images.png" alt="coding-on-computer">
+            Школа <span class="red-bracket">{</span><strong>программирования</strong><span class="red-bracket">}</span>
+            для тех, кому нужны реальные навыки, а не просто сертификат
+          </p>
+          
+          <p class="pass-test-txt">Пройдите тестирование, чтобы олучить доступ к бесплатным вводным урокам</p>
 
+          <button class="pass-test-btn">
+            Пройти тестирование
+            <img class="arrow-up" src="assets/images/arrow-up.png" alt="arrow-up">
+          </button>
+        </div>
+
+        <section class="firstSection">
+          <h2 class="heading-sect-one">Какие технологии вы изучите:</h2>
+
+          <div class="container-sect-one">
+
+            <img class="img-section-one" src="assets/images/type-of-technologies.png" alt="a man is coding">
+
+            <div class="type-of-technologies">
+              <div class="technologies-list">
+                <p class="tech-item python">Язык программирования Python</p>
+                
+                <p class="tech-item networks">Сети</p>
+
+                <p class="tech-item dataBase">Базы данных</p>
+
+                <p class="tech-item flaskDjango">Фреймворки Flask и Django</p>
+
+                <p class="tech-item debuggingTesting">Отладка и тестирование</p>
+
+                <p class="tech-item docker">Docker</p>
+
+                <p class="tech-item git">Git</p>
+              </div>
+              
+              <p class="min">Это необходимый минимум для современного backend-разработчика</p>
+            </div>
+          </div>
+          
+          <h2 class="heading-sect-one">Обучение в YtYt – это удобно и результативно</h2>
+        </section>
 
       </main>
 
