@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Школа программирования YtYt</title>
   <link rel="stylesheet" href="assets/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -48,9 +51,9 @@
               
               <p class="main-intro-text__paragraph">Пройдите тестирование, чтобы получить доступ к бесплатным вводным урокам</p>
 
-              <button class="main-intro-text__btn">
+              <button class="main-intro-text__btn button">
                 Пройти тестирование
-                <img class="main-intro-text__img" src="assets/images/arrow-up.png" alt="arrow-up">
+                <img class="btn__img" src="assets/images/arrow-up.png" alt="arrow-up">
               </button>
             </div>
 
@@ -157,6 +160,11 @@
           <p class="process-txt">Обучение должно быть комфортным. Поэтому мы разработали собственную платформу для обучения программированию. На ней вы можете не только изучать теорию, но и запускать готовые примеры и даже писать свой собственный код.</p>
         
           <div class="process-video">
+            <img src="assets/images/macbook.png" alt="macbook">
+
+            <video src="https://www.youtube.com/watch?v=XPLACPm_TzE&ab_channel=%D0%9E%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%D1%86%D0%B5%D0%BD%D1%82%D1%80%D0%B2%D1%8B%D1%81%D0%BE%D0%BA%D0%B8%D1%85%D1%82%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B9">
+              
+            </video>
 
           </div>
 
@@ -187,11 +195,11 @@
           </div>
 
           <div class="process-start">
-            <button class="process-start__btn">Начать обучение
-              <img class="process-start-btn__img" src="assets/images/arrow-up.png" alt="arrow-up">
+            <button class="process-start__btn button">Начать обучение
+              <img class="btn__img" src="assets/images/arrow-up.png" alt="arrow-up">
             </button>
 
-            <p class="process-start-paagraph">Попробуйте, первые уроки бесплатны, но нужно пройти тестирование</p>
+            <p class="process-start-paragraph">Попробуйте, первые уроки бесплатны, но нужно пройти тестирование</p>
           </div>
         </section>
 
@@ -199,13 +207,15 @@
           <div class="helpService-container">
             <div class="helpService-gridContainer first">
               <div class="helpService__item">
-                <img class="helpService-item__img" src="assets/images/service&help.png" alt="service and help">
+                <img class="helpService__item__img" src="assets/images/service&help.png" alt="service and help">
               </div>
 
               <div class="helpService__item text">
                 <h3 class="helpService-item__header">Помощь и поддержка</h3>
 
                 <p class="helpService-item__paragraph">Если в процессе обучения возникнут сложности, вы всегда сможете задать вопрос своему наставнику.</p>
+
+                <br>
 
                 <p class="helpService-item__paragraph">
                   Раз в несколько уроков вы будете получать большое задание, которое нужно будет сдавать на проверку код-ревьюеру. Он внимательно изучит ваш код, найдет ошибки и поможет вам стать лучше. 
@@ -223,151 +233,227 @@
               </div>
               
               <div class="helpService__item">
-                <img class="helpService-item__img" src="assets/images/coding.png" alt="coding photo">
+                <img class="helpService__item__img" src="assets/images/coding.png" alt="coding photo">
               </div>
             </div>
           </div>
         </section>
 
         <section id="price" class="price">
-          <h2 class="heading-sec-four">Стоимость обучения</h2>
+          <h2 class="price__header">Стоимость обучения</h2>
 
-          <div class="paymentFeature">
-            <div class="stagedPayment">
-              <img class="stagedPaymentIcon" src="assets/images/icons/landing.png" alt="landing icon">
+          <div class="price__container">
+            <div class="price__item">
+              <img class="price__item__img" src="assets/images/icons/landing.png" alt="landing icon">
               
-              <p class="stagedPaymentTxt">
+              <p class="price__item__txt">
                 Весь курс разбит на несколько блоков. 
                 Оплата поэтапная вы платите только за тот блок, который сейчас проходите.
               </p>
             </div>
 
-            <div class="instalment">
-              <img class="instalmentIcon" src="assets/images/icons/payment.png" alt="payment icon">
+            <div class="price__item">
+              <img class="price__item__img" src="assets/images/icons/payment.png" alt="payment icon">
               
-              <p class="instalmentTxt">
+              <p class="price__item__txt">
                 Любой из блоков вы можете оплатить в рассрочку
               </p>
             </div>
 
-            <div class="refund">
-              <img class="refundIcon" src="assets/images/icons/money-return.png" alt="money return icon">
+            <div class="price__item">
+              <img class="price__item__img" src="assets/images/icons/money-return.png" alt="money return icon">
               
-              <p class="refundTxt">
+              <p class="price__item__txt">
                 Если передумаете учиться, то возврат можно оформить в любой момент. Возвращаем деньги за 3 рабочих дня.              
               </p>
             </div>
           </div>
 
-          <div class="tablePrice">
-            <table class="table">
-              <thead class="thead">
-                <tr>
-                  <th class="th">Блок</th>
+          <div class="price-table">
+            <div class="price-table-container">
+              <table class="table">
+                <thead class="thead">
+                  <tr class="tr">
+                    <th class="th">Блок</th>
 
-                  <th class="th">Стоимость (₽)</th>
+                    <th class="th">Стоимость (₽)</th>
 
-                  <th class="th">Расчетное время обучения (мес.) *</th>
-                </tr>
-              </thead>
+                    <th class="th">Расчетное время обучения (мес.) *</th>
+                  </tr>
+                </thead>
 
-              <tbody class="tbody">
-                <tr class="tr">
-                  <td class="td">Введение в программирование</td>
+                <tbody class="tbody">
+                  <tr class="tr">
+                    <td class="td">Введение в программирование</td>
 
-                  <td class="td">Бесплатно</td>
+                    <td class="td">Бесплатно</td>
 
-                  <td class="td">0.5</td>
-                </tr>
+                    <td class="td">0.5</td>
+                  </tr>
 
-                <tr class="tr">
-                  <td class="td">Основы программирования на Python</td>
+                  <tr class="tr">
+                    <td class="td">Основы программирования на Python</td>
 
-                  <td class="td">9 900</td>
+                    <td class="td">9 900</td>
 
-                  <td class="td">1</td>
-                </tr>
+                    <td class="td">1</td>
+                  </tr>
 
-                <tr class="tr">
-                  <td class="td">Python, продвинутый уровень</td>
+                  <tr class="tr">
+                    <td class="td">Python, продвинутый уровень</td>
 
-                  <td class="td">14 900</td>
+                    <td class="td">14 900</td>
 
-                  <td class="td">2.5</td>
-                </tr>
+                    <td class="td">2.5</td>
+                  </tr>
 
-                <tr class="tr">
-                  <td class="td">Сети + фреймворк Flask</td>
+                  <tr class="tr">
+                    <td class="td">Сети + фреймворк Flask</td>
 
-                  <td class="td">14 900</td>
+                    <td class="td">14 900</td>
 
-                  <td class="td">2.5</td>
-                </tr>
+                    <td class="td">2.5</td>
+                  </tr>
 
-                <tr class="tr">
-                  <td class="td">Базы данных</td>
+                  <tr class="tr">
+                    <td class="td">Базы данных</td>
 
-                  <td class="td">14 900</td>
+                    <td class="td">14 900</td>
 
-                  <td class="td">2</td>
-                </tr>
+                    <td class="td">2</td>
+                  </tr>
 
-                <tr class="tr">
-                  <td class="td">Фреймворк Django</td>
+                  <tr class="tr">
+                    <td class="td">Фреймворк Django</td>
 
-                  <td class="td">14 900</td>
+                    <td class="td">14 900</td>
 
-                  <td class="td">2</td>
-                </tr>
+                    <td class="td">2</td>
+                  </tr>
 
-                <tr class="tr">
-                  <td class="td">Разработка «боевого» проекта</td>
+                  <tr class="tr">
+                    <td class="td">Разработка «боевого» проекта</td>
 
-                  <td class="td">9 900</td>
+                    <td class="td">9 900</td>
 
-                  <td class="td">1.5</td>
-                </tr>
-              </tbody>
+                    <td class="td">1.5</td>
+                  </tr>
+                </tbody>
 
-              <tfoot class="tfoot">
-                <tr>
-                  <td class="td">Итого</td>
+                <tfoot class="tfoot">
+                  <tr class="tr">
+                    <td class="td">Итого</td>
 
-                  <td class="td">79 400</td>
+                    <td class="td">79 400</td>
 
-                  <td>12</td>
-                </tr>
-              </tfoot>
+                    <td class="td">12</td>
+                  </tr>
+                </tfoot>
 
-              <caption class="footnote">* если занятиям уделяется около 20 часов в неделю</caption>
-            </table>
+                <caption class="footnote">* если занятиям уделяется около 20 часов в неделю</caption>
+              </table>
+            </div>
+          </div>
+
+          <div class="price__footer">
+            <div class="price__footer__container">
+              <img src="assets/images/icons/mouthpiece.png" alt="mouthpiece icon">
+
+              <p class="price__footer__txt">
+                Все блоки проходятся строго по порядку. Пропустить какой-то блок или начать обучение с середины нельзя, даже если вы считаете, что уже знаете какую-то часть материала. Только так мы можем гарантировать, что вы получите все знания, предусмотренные учебной программой.
+              </p>
+
+              <button class="price__footer__btn button"> 
+                Начать обучение
+
+                <img class="btn__img" src="assets/images/arrow-up.png" alt="arrow up">
+              </button>
+            </div>
           </div>
         </section>
-
-        <article>
-          <div class="article-container">
-            <img src="" alt="">
-
-            <p></p>
-
-            <button>
-              <p>Начать обучение</p>
-
-              <img src="" alt="">
-            </button>
-          </div>
-        </article>
       </main>
 
       <footer class="footer">
-        <div class="footer-container">
-          <p>© 2022 ytyt — Все права защищены</p>
+        <div id="contacts" class="contacts">
+          <div class="contacts__media">
+            <div class="contacts__media__logo">
+              <img src="assets/images/logo-img.svg" alt="logo">
 
-          <p>Пользовательское соглашение</p>
+              <p class="contacts__media__txt">
+                Школа 
+                <br>программирования
+              </p>
+            </div>
 
-          <p>Политика конфиденциальности</p>
+            <div class="contacts__media__icons">
+              <ul class="contacts__media__icons__list">
+                <li class="contacts__media__icons__list__item">
+                  <a href="#">
+                    <img src="assets/images/icons/ins.png" alt="instagram icon">
+                  </a>
+                  </li>
+
+                <li class="contacts__media__icons__list__item">
+                  <a href="#">
+                    <img src="assets/images/icons/vk.png" alt="vk icon">
+                  </a>
+                  </li>
+
+                <li class="contacts__media__icons__list__item">
+                  <a href="#">
+                    <img src="assets/images/icons/facebook.png" alt="facebook icon">
+                  </a>
+                  </li>
+
+                <li class="contacts__media__icons__list__item">
+                  <a href="#">
+                    <img src="assets/images/icons/youtube.png" alt="youtube icon">
+                  </a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer__nav">
+            <nav class="footer__nav__list">
+              <li class="footer__nav__item"><a class="footer__nav__link" href="#youWillLearn">Чему вы научитесь</a></li>
+    
+              <li class="footer__nav__item"><a class="footer__nav__link" href="#learningProcess">Процесс обучения</a></li>
+  
+              <li class="footer__nav__item"><a class="footer__nav__link" href="#price">Стоимость</a></li>
+                  
+              <li class="footer__nav__item"><a class="footer__nav__link" href="#contacts">Контакты</a></li>
+
+              <li class="footer__nav__item"><a class="footer__nav__link" href="#">Регистрация</a></li>
+            </nav>
+          </div>
+
+          <div class="footer-requisites">
+            <div class="footer-requisites-contacts">
+              <a class="footer-requisites-contacts-tel" href="tel:+74993489396">+7 (499) 348 93 96</a>
+            
+              <a class="footer-requisites-contacts-mail" href="mailto:info@ytyt.ru">info@ytyt.ru</a>
+            </div>
+
+            <div>
+              <p class="footer-requisites-txt">
+                ИП Умаров Т. А.
+                <br>ИНН 745216229809 
+                <br>ОГРНИП 315745200001358
+              </p>
+            </div>
+          </div>
         </div>
+        
+        <div class="footer-container">
+          <div class="footer-container-txt">
+            <p class="footer-container-txt-secured">© 2022 ytyt — Все права защищены</p>
 
+            <p>Пользовательское соглашение</p>
+
+            <p>Политика конфиденциальности</p>
+          </div>
+        </div>
       </footer>
     </div>
 </body>
