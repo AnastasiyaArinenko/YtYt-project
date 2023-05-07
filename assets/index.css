@@ -295,7 +295,7 @@
 .benefits {
   display: flex;
   flex-flow: row wrap;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   gap: 27px;
   padding-bottom: 31px;
@@ -306,6 +306,7 @@
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
+  max-width: 269px;
   padding: 50px 25px 31px;
   text-align: center;
   background-color: #eaf2f5;
@@ -947,8 +948,9 @@
     flex-direction: row;
     gap: 0px;
     grid-column: span 2;
-    text-align: left;
+    max-width: none;
     padding-left: 27px;
+    text-align: left;
   }
 
   .benefits-img{
