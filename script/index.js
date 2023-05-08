@@ -3,13 +3,13 @@ const modalElem = document.getElementById("modalWrapper");
 const closeButton = document.getElementById("closeButton");
 
 const openModal = () => {
-  modalElem.style.dislay = "block" 
+  modalElem.style.display = "block" 
 };
 
 buttonElem.addEventListener("click", openModal);
 
 const closeModal = () => {
-  modalElem.style.dislay = "none" 
+  modalElem.style.display = "none" 
 };
 
 closeButton.addEventListener("click", closeModal);
