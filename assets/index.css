@@ -51,13 +51,14 @@
 }
 
 .main {
+  width: 100vw;
+  min-height: 100vh;
   font-family: "Gilroy-Regular",sans-serif;
   color: #22253B;
-  min-height: 100vh;
-  width: 100vw;
 }
 
 .header-container {
+  width: 100vw;
   padding-top: 12px;
   background: rgb(255,255,255);
   background: radial-gradient(circle farthest-side at 70% 350px, rgba(255,255,255,1) 12%, rgba(245,249,250,1) 19%, rgba(255,255,255,1) 19%, rgba(245,249,250,1) 33%, rgba(255,255,255,1) 34%, rgba(245,249,250,1) 49%, rgba(255,255,255,1) 50%, rgba(245,249,250,1) 68%, rgba(255,255,255,1) 69%, rgba(245,249,250,1) 85%, rgba(255,255,255,1) 86%, rgba(247,250,251,1) 100%, rgba(245,249,250,1) 100%);
@@ -214,6 +215,7 @@
 .technologies-container {
   gap: 59px;
   background-color: #EAF2F5;
+  margin: 0 10px;
   padding: 42px 100px 0;
   border-radius: 48px;
 }
@@ -280,6 +282,7 @@
 
 .technologies-text {
   width: 386px;
+  margin-bottom: 20px;
   font-family: "Gilroy-SemiBold", sans-serif;
   font-weight: 600;  
   font-size: 20px;
@@ -499,6 +502,7 @@
 .helpService__item{
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-content: center;
   justify-content: center;
   background: #EAF2F5;
