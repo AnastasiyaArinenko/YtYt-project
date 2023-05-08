@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap" rel="stylesheet">
+    <!-- <script src="index.js"></script> -->
   </head>
 
   <body>
@@ -19,13 +20,13 @@
 
           <nav>
             <ul class="header__nav">
-              <li class="heade__nav__item"><a class="header__nav__link" href="#youWillLearn">Чему вы научитесь</a></li>
+              <li class="header__nav__item"><a class="header__nav__link" href="#youWillLearn">Чему вы научитесь</a></li>
 
-              <li class="heade__nav__item"><a class="header__nav__link" href="#learningProcess">Процесс обучения</a></li>
+              <li class="header__nav__item"><a class="header__nav__link" href="#learningProcess">Процесс обучения</a></li>
 
-              <li class="heade__nav__item"><a class="header__nav__link" href="#price">Стоимость</a></li>
+              <li class="header__nav__item"><a class="header__nav__link" href="#price">Стоимость</a></li>
 
-              <li class="heade__nav__item"><a class="header__nav__link" href="#contacts">Контакты</a></li>
+              <li class="header__nav__item"><a class="header__nav__link" href="#contacts">Контакты</a></li>
             </ul>
           </nav>
 
@@ -33,9 +34,36 @@
             <button class="header__button--signup">Регистрация</button>
 
             <button class="header-button--login">
-              <img class="header__button--login__img" src="assets/images/arrow-right.png" alt="arrow-right">
+              <img class="header__button--login__img" src="assets/images/arrow-right.svg" alt="arrow-right">
               Войти
             </button>
+          </div>
+
+          <button id="openButton" class="header__menu-btn">
+            <img class="header__nav__img" src="assets/images/menu.png" alt="menu icon">
+          </button>
+
+          <div id="modalWrapper" class="modal-wrapper">
+            <div id="modal"class="modal">
+              <button id="closeButton" class="modal__btn--close">Х</button>
+              
+              <nav class="modal__nav">
+                <li class="header__nav__item modal__nav__item"><a class="header__nav__link modal__nav__link" href="#youWillLearn">Чему вы научитесь</a></li>
+
+                <li class="header__nav__item modal__nav__item"><a class="header__nav__link modal__nav__link" href="#learningProcess">Процесс обучения</a></li>
+
+                <li class="header__nav__item modal__nav__item"><a class="header__nav__link modal__nav__link" href="#price">Стоимость</a></li>
+
+                <li class="header__nav__item modal__nav__item"><a class="header__nav__link modal__nav__link" href="#contacts">Контакты</a></li>
+
+                <li class="header__nav__item modal__nav__item"><a class="header__nav__link modal__nav__link" href="#">Регистрация</a></li>
+              </nav>
+
+              <button class="header-button--login modal-btn">
+                <img class="header__button--login__img" src="assets/images/arrow-right.svg" alt="arrow-right">
+                Войти
+              </button>
+            </div>
           </div>
         </header>
 
