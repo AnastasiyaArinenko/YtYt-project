@@ -216,7 +216,7 @@
 .tech-type {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   gap: 26.13px;
 }
@@ -225,7 +225,7 @@
   width: 466.83px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
   gap: 10px;
   list-style-type: none;
@@ -616,14 +616,14 @@
 }
 
 .footnote {
-  background-color: none;
-  caption-side: bottom;
-  text-align: left;
+  max-width: 1160px;
+  margin: 0 auto;
+  margin-bottom: 33px;
+  padding-left: 50px;
   font-weight: 400;
   font-size: 16px;
   line-height: 25px;
   color: #8E8E8E;
-  margin-bottom: 33px;
 }
 
 .price-footer {
@@ -1192,7 +1192,6 @@
   
   .footnote {
     max-width: 200px;
-    margin-left: 20px;
     font-size: 12px;
     line-height: 20px;
     margin-bottom: 47px;
