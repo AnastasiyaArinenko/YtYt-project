@@ -82,6 +82,7 @@
 .header-container {
   width: 100vw;
   padding-top: 12px;
+  position: relative;
   background: rgb(255,255,255);
   background: radial-gradient(circle farthest-side at 70% 350px, rgba(255,255,255,1) 12%, rgba(245,249,250,1) 19%, rgba(255,255,255,1) 19%, rgba(245,249,250,1) 33%, rgba(255,255,255,1) 34%, rgba(245,249,250,1) 49%, rgba(255,255,255,1) 50%, rgba(245,249,250,1) 68%, rgba(255,255,255,1) 69%, rgba(245,249,250,1) 85%, rgba(255,255,255,1) 86%, rgba(247,250,251,1) 100%, rgba(245,249,250,1) 100%);
   background-size: cover;
@@ -190,9 +191,23 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 122px;
+  position: relative;
   margin-top: 70px;
   padding-bottom: 110px;
 }
+
+.main-intro:after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  z-index: 4;
+  width: 48%;
+  height: 60px;
+  border-top-right-radius: 10px;
+  background: #FFFFFF;
+}
+
 
 .main-intro__header{
   max-width: 638px;
@@ -219,6 +234,21 @@
 
 .main-intro__btn {
   font-size: 20px;
+}
+
+.main-intro__scroll{
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  z-index: 6;
+  border-radius: 50%;
+  text-decoration: none;
+  background-color: white;
 }
 
 .technologies {
