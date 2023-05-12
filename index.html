@@ -9,16 +9,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap">
+    <link rel="shortcut icon" href="assets/images/logo-img.svg" type="image/svg">
   </head>
 
   <body>
     <main class="main">
       <div class="header-container">
-        <header class="header">
+        <header class="header container">
           <a class="header__logo" href="#"><img src="assets/images/logo-img.svg" alt="logo"></a>
 
           <nav>
-            <ul class="header__nav">
+            <ul class="header__nav container">
               <li class="header__nav__item"><a class="header__nav__link" href="#youWillLearn">Чему вы научитесь</a></li>
 
               <li class="header__nav__item"><a class="header__nav__link" href="#learningProcess">Процесс обучения</a></li>
@@ -68,7 +69,7 @@
 
         <div class="main-intro">
           <div class="main-intro__text">
-            <h1 class="main-intro__header">Школа <span class="header__bracket">{</span><strong class="main-intro__header--italic">программирования</strong><span class="main-intro-text-header__bracket">}</span> <br />для тех, кому нужны <br />реальные навыки, <br />а не просто сертификат</h1>
+            <h1 class="main-intro__heading">Школа <span class="main-intro__heading--red">{</span><strong class="main-intro__header--italic">программирования</strong><span class="main-intro__heading--red">}</span> <br />для тех, кому нужны <br />реальные навыки, <br />а не просто сертификат</h1>
 
             <p class="main-intro__paragraph">Пройдите тестирование, чтобы получить доступ к бесплатным вводным урокам</p>
 
@@ -89,7 +90,7 @@
           <img class="technologies-container__img" src="assets/images/type-of-technologies.png" alt="a man is coding">
 
           <div class="tech-type">
-            <ul class="tech-type__list">
+            <ul class="tech-type__list container">
               <li class="tech-type__list__item python">Язык программирования Python</li>
 
               <li class="tech-type__list__item networks">Сети</li>
@@ -111,78 +112,64 @@
       </section>
 
       <section class="advantagies">
-        <div class="advantagies-container">
+        <div class="advantagies-container container">
           <h2 class="advantagies__header heading">Обучение в YtYt – это удобно и результативно</h2>
 
-          <div class="benefits">
-            <div class="benefits__item">
-              <img class="benefits-img" src="assets/images/icons/practice.png" alt="practice-icon">
+          <div class="benefits container">
+            <div class="benefits-item container">
+              <img class="benefits-item__img" src="assets/images/icons/practice.png" alt="practice-icon">
 
-              <div class="benefits-text">
-                <h4 class="benefits__item__header">Огромное количество практики</h4>
+              <h4 class="benefits-item__heading">Огромное количество практики</h4>
 
-                <p class="benefits__item__txt">Более 500 самостоятельных заданий и 20 полноценных больших проектов</p>
-              </div>
+              <p class="benefits-item__txt">Более 500 самостоятельных заданий и 20 полноценных больших проектов</p>
             </div>
 
-            <div class="benefits__item">
-              <img class="benefits-img" src="assets/images/icons/methods.png" alt="methods-icon">
+            <div class="benefits-item container">
+              <img class="benefits-item__img" src="assets/images/icons/methods.png" alt="methods-icon">
 
-              <div class="benefits-text">
-                <h4 class="benefits__item__header">Современные методики обучения</h4>
+              <h4 class="benefits-item__heading">Современные методики обучения</h4>
 
-                <p class="benefits__item__txt">Спиральное обучение: погружаемся в материал постепенно, виток за витком</p>
-              </div>
+              <p class="benefits-item__txt">Спиральное обучение: погружаемся в материал постепенно, виток за витком</p>
               </div>
 
-            <div class="benefits__item">
-              <img class="benefits-img" src="assets/images/icons/computer.png" alt="computer-icon">
+            <div class="benefits-item container">
+              <img class="benefits-item__img" src="assets/images/icons/computer.png" alt="computer-icon">
 
-              <div class="benefits-text">
-                <h4 class="benefits__item__header">Простое и понятное изложение</h4>
+              <h4 class="benefits-item__heading">Простое и понятное изложение</h4>
 
-                <p class="benefits__item__txt">Вместо заумных терминов – примеры из реального мира</p>
-              </div>
+              <p class="benefits-item__txt">Вместо заумных терминов – примеры из реального мира</p>
             </div>
 
-            <div class="benefits__item">
-              <img class="benefits-img" src="assets/images/icons/shedule.png" alt="schedule-icon">
+            <div class="benefits-item container">
+              <img class="benefits-item__img" src="assets/images/icons/shedule.png" alt="schedule-icon">
 
-              <div class="benefits-text">
-                <h4 class="benefits__item__header">Гибкий график занятий</h4>
+              <h4 class="benefits-item__heading">Гибкий график занятий</h4>
 
-                <p class="benefits__item__txt">Учитесь в любое время в удобном для вас темпе</p>
-              </div>
+              <p class="benefits-item__txt">Учитесь в любое время в удобном для вас темпе</p>
             </div>
 
-            <div class="benefits__item">
-              <img class="benefits-img" src="assets/images/icons/chat.png" alt="chat-icon">
+            <div class="benefits-item container">
+              <img class="benefits-item__img" src="assets/images/icons/chat.png" alt="chat-icon">
 
-              <div class="benefits-text">
-                <h4 class="benefits__item__header">Прямая связь с опытными программистами</h4>
+              <h4 class="benefits-item__heading">Прямая связь с опытными программистами</h4>
 
-                <p class="benefits__item__txt">Задавайте вопросы и отправляйте свой код на проверку</p>
-              </div>
+              <p class="benefits-item__txt">Задавайте вопросы и отправляйте свой код на проверку</p>
             </div>
 
-            <div class="benefits__item">
-              <img class="benefits-img" src="assets/images/icons/payment.png" alt="payment-icon">
+            <div class="benefits-item container">
+              <img class="benefits-item__img" src="assets/images/icons/payment.png" alt="payment-icon">
 
-              <div class="benefits-text">
-                <h4 class="benefits__item__header">Оплата небольшими частями</h4>
+              <h4 class="benefits-item__heading">Оплата небольшими частями</h4>
 
-                <p class="benefits__item__txt">Платите только за тот материал, который сейчас изучаете, а не за весь курс сразу</p>
-              </div>
+              <p class="benefits-item__txt">Платите только за тот материал, который сейчас изучаете, а не за весь курс сразу</p>
             </div>
 
-            <div class="benefits__item">
-              <img class="benefits-img" src="assets/images/icons/money-return.png" alt="return-icon">
+            <div class="benefits-item container">
+              <img class="benefits-item__img" src="assets/images/icons/money-return.png" alt="return-icon">
 
-              <div class="benefits-text">
-                <h4 class="benefits__item__header">Быстрый и легкий возврат</h4>
+              <h4 class="benefits-item__heading">Быстрый и легкий возврат</h4>
 
-                <p class="benefits__item__txt">Если передумаете учиться – вернем деньги за 3 рабочих дня</p>
-              </div>
+              <p class="benefits-item__txt">Если передумаете учиться – вернем деньги за 3 рабочих дня</p>
             </div>
           </div>
         </div>
@@ -193,39 +180,39 @@
 
         <p class="process__txt">Обучение должно быть комфортным. Поэтому мы разработали собственную платформу для обучения программированию. На ней вы можете не только изучать теорию, но и запускать готовые примеры и даже писать свой собственный код.</p>
 
-        <div class="process__video">
+        <div class="process-video container">
           <div class="video-wrapper">
             <div class="video-container">
-              <iframe  class="video" src="assets/video/video.mp4" allowfullscreen></iframe>
+              <iframe  class="video-container__video" src="assets/video/video.mp4" allowfullscreen></iframe>
             
-            <button class="video-btn"><img src="assets/images/play.png" alt="play video"></button>
+              <button class="video-container__btn"><img src="assets/images/play.png" alt="play video"></button>
             </div>
-            </div>
+          </div>
         </div>
 
-        <div class="process__steps">
-          <div class="process__order first">
-            <p class="process__number">01</p>
+        <div class="process-steps container">
+          <div class="process-order first">
+            <p class="process-order__number">01</p>
 
-            <h3 class="process__steps__header">Весь материал разбит на небольшие уроки</h3>
+            <h3 class="process-order__header">Весь материал разбит на небольшие уроки</h3>
 
-            <p class="process__steps__txt">Теория и практика подаются маленькими порциями. Так вам будет легче усваивать новые знания.</p>
+            <p class="process-order__txt">Теория и практика подаются маленькими порциями. Так вам будет легче усваивать новые знания.</p>
           </div>
 
-          <div class="process__order second">
-            <p class="process__number">02</p>
+          <div class="process-order second">
+            <p class="process-order__number">02</p>
 
-            <h3 class="process__steps__header">Обучение через практику</h3>
+            <h3 class="process-order__header">Обучение через практику</h3>
 
-            <p class="process__steps__txt">Всё, что вы узнали, вы тут же начинаете применять на практике. Вы сразу видите результаты своего труда.</p>
+            <p class="process-order__txt">Всё, что вы узнали, вы тут же начинаете применять на практике. Вы сразу видите результаты своего труда.</p>
           </div>
 
-          <div class="process__order third">
-            <p class="process__number">03</p>
+          <div class="process-order third">
+            <p class="process-order__number">03</p>
 
-            <h3 class="process__steps__header">Нет ограничений по времени</h3>
+            <h3 class="process-order__header">Нет ограничений по времени</h3>
 
-            <p class="process__steps__txt">Можно совмещать учёбу с работой и другими делами. Не нужно выпрашивать академический отпуск, если пришлось сделать перерыв.</p>
+            <p class="process-order__txt">Можно совмещать учёбу с работой и другими делами. Не нужно выпрашивать академический отпуск, если пришлось сделать перерыв.</p>
           </div>
         </div>
 
@@ -242,60 +229,60 @@
       <section class="helpService">
         <div class="helpService-container container">
           <div class="helpService-gridContainer first">
-            <div class="helpService__item">
-              <img class="helpService__item__img" src="assets/images/service&help.png" alt="service and help">
+            <div class="helpService-item container">
+              <img class="helpService-item__img" src="assets/images/service&help.png" alt="service and help">
             </div>
 
-            <div class="helpService__item text">
-              <h3 class="helpService__item__header">Помощь и поддержка</h3>
+            <div class="helpService-item text container">
+              <h3 class="helpService-item__heading">Помощь и поддержка</h3>
 
-              <p class="helpService__item__paragraph">Если в процессе обучения возникнут сложности, вы всегда сможете задать вопрос своему наставнику.</p>
+              <p class="helpService-item__paragraph">Если в процессе обучения возникнут сложности, вы всегда сможете задать вопрос своему наставнику.</p>
 
               <br>
 
-              <p class="helpService__item__paragraph">Раз в несколько уроков вы будете получать большое задание, которое нужно будет сдавать на проверку код-ревьюеру. Он внимательно изучит ваш код, найдет ошибки и поможет вам стать лучше.</p>
+              <p class="helpService-item__paragraph">Раз в несколько уроков вы будете получать большое задание, которое нужно будет сдавать на проверку код-ревьюеру. Он внимательно изучит ваш код, найдет ошибки и поможет вам стать лучше.</p>
             </div>
           </div>
 
           <div class="helpService-gridContainer second">
-            <div class="helpService__item text">
-              <h3 class="helpService__item__header">Методика обучения</h3>
+            <div class="helpService-item text container">
+              <h3 class="helpService-item__heading">Методика обучения</h3>
 
-              <p class="helpService__item__paragraph">Весь учебный материал структурирован по принципу «спирального обучения». Сначала вы получаете базовые знания, а затем на каждом витке спирали углубляетесь в изученные темы, доводя их понимание до совершенства. Такой подход упрощает обучение и гарантирует, что вы не пропустите ничего важного.</p>
+              <p class="helpService-item__paragraph">Весь учебный материал структурирован по принципу «спирального обучения». Сначала вы получаете базовые знания, а затем на каждом витке спирали углубляетесь в изученные темы, доводя их понимание до совершенства. Такой подход упрощает обучение и гарантирует, что вы не пропустите ничего важного.</p>
             </div>
 
-            <div class="helpService__item">
-              <img class="helpService__item__img" src="assets/images/coding.png" alt="coding photo">
+            <div class="helpService-item container">
+              <img class="helpService-item__img" src="assets/images/coding.png" alt="coding photo">
             </div>
           </div>
         </div>
       </section>
 
       <section id="price" class="price">
-        <h2 class="price__header heading">Стоимость обучения</h2>
+        <h2 class="price__heading heading">Стоимость обучения</h2>
 
-        <div class="price__container container">
-          <div class="price__item">
-            <img class="price__item__img" src="assets/images/icons/landing.png" alt="landing icon">
+        <div class="price-container container">
+          <div class="price-item container">
+            <img class="price-item__img" src="assets/images/icons/landing.png" alt="landing icon">
 
-            <p class="price__item__txt">Весь курс разбит на несколько блоков. Оплата поэтапная вы платите только за тот блок, который сейчас проходите.</p>
+            <p class="price-item__txt">Весь курс разбит на несколько блоков. Оплата поэтапная вы платите только за тот блок, который сейчас проходите.</p>
           </div>
 
-          <div class="price__item">
-            <img class="price__item__img" src="assets/images/icons/payment.png" alt="payment icon">
+          <div class="price-item container">
+            <img class="price-item__img" src="assets/images/icons/payment.png" alt="payment icon">
 
-            <p class="price__item__txt">Любой из блоков вы можете оплатить в рассрочку</p>
+            <p class="price-item__txt">Любой из блоков вы можете оплатить в рассрочку</p>
           </div>
 
-          <div class="price__item">
-            <img class="price__item__img" src="assets/images/icons/money-return.png" alt="money return icon">
+          <div class="price-item container">
+            <img class="price-item__img" src="assets/images/icons/money-return.png" alt="money return icon">
 
-            <p class="price__item__txt">Если передумаете учиться, то возврат можно оформить в любой момент. Возвращаем деньги за 3 рабочих дня.</p>
+            <p class="price-item__txt">Если передумаете учиться, то возврат можно оформить в любой момент. Возвращаем деньги за 3 рабочих дня.</p>
           </div>
         </div>
 
         <div class="price-table">
-          <div class="price-table-container">
+          <div class="table-container container">
             <table class="table">
               <thead class="thead">
                 <tr class="tr">
@@ -404,7 +391,7 @@
           <div class="contacts-media__logo">
             <img src="assets/images/logo-img.svg" alt="logo">
 
-            <p class="contacts-media__txt">
+            <p class="contacts-media__logo__txt">
               Школа
               <br />программирования
             </p>
@@ -470,7 +457,7 @@
       </div>
 
       <div class="footer-container">
-        <div class="footer-container-txt">
+        <div class="footer-container-txt container">
           <p class="footer-container-txt__secured">© 2022 ytyt — Все права защищены</p>
 
           <p class="footer-container-txt--red">Пользовательское соглашение</p>
@@ -479,6 +466,7 @@
         </div>
       </div>
     </footer>
+  
     <script src="script/index.js"></script>
   </body>
 </html>
