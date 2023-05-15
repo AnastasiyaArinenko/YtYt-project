@@ -84,8 +84,9 @@
 .header-container {
   min-width: 100vw;
   padding-top: 12px;
-  background: rgb(255,255,255);
-  background: radial-gradient(circle farthest-side at 70% 350px, rgba(255,255,255,1) 12%, rgba(245,249,250,1) 19%, rgba(255,255,255,1) 19%, rgba(245,249,250,1) 33%, rgba(255,255,255,1) 34%, rgba(245,249,250,1) 49%, rgba(255,255,255,1) 50%, rgba(245,249,250,1) 68%, rgba(255,255,255,1) 69%, rgba(245,249,250,1) 85%, rgba(255,255,255,1) 86%, rgba(247,250,251,1) 100%, rgba(245,249,250,1) 100%);
+  position: relative;
+  background: rgb(234,242,245);
+  background: radial-gradient(circle farthest-side at 68% 350px, rgba(234,242,245,1) 0%, rgba(244,248,250,1) 14%, rgba(255,255,255,1) 14%, rgba(234,242,245,1) 14%, rgba(244,248,250,1) 25%, rgba(255,255,255,1) 26%, rgba(234,242,245,1) 26%, rgba(244,248,250,1) 38%, rgba(255,255,255,1) 39%, rgba(234,242,245,1) 39%, rgba(242,247,249,1) 54%, rgba(255,255,255,1) 55%, rgba(234,242,245,1) 55%, rgba(255,255,255,1) 76%, rgba(245,249,251,1) 78%, rgba(245,249,251,1) 82%, rgba(255,255,255,1) 97%, rgba(244,248,250,1) 100%);
   background-size: cover;
 }
 
@@ -217,7 +218,18 @@
   font-size: 20px;
 }
 
-.main-intro__scroll{
+.main-intro:after{
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  z-index: 6;
+  width: 40vw;
+  height: 50px;
+  background-color: #ffffff;
+}
+
+.header-container__scroll{
   width: 40px;
   height: 40px;
   display: flex;
@@ -229,7 +241,18 @@
   z-index: 6;
   border-radius: 50%;
   text-decoration: none;
-  background-color: white;
+  background-color: #ffffff;
+}
+
+.header-container:after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  right: 0;
+  z-index: 6;
+  width: 40vw;
+  height: 50px;
+  background-color: #ffffff;
 }
 
 .technologies {
@@ -237,15 +260,15 @@
   position: relative;
 }
 
-.technologies::before{
+.technologies:before{
   content: "";
   position: absolute;
   top: -45px;
   left: 0;
   z-index: 6;
-  width: 100%;
+  width: 100vw;
   height: 50px;
-  background-image: url(images/line.svg);
+  background-image: url(images/technology-before.png);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -365,7 +388,7 @@
   margin-bottom: -70px;
   padding-bottom: 160px;
   background: rgb(255,255,255);
-  background: radial-gradient(circle at top, rgba(255,255,255,1) 12%, rgba(245,249,250,1) 19%, rgba(255,255,255,1) 19%, rgba(245,249,250,1) 33%, rgba(255,255,255,1) 34%, rgba(245,249,250,1) 49%, rgba(255,255,255,1) 50%, rgba(245,249,250,1) 68%, rgba(255,255,255,1) 69%, rgba(245,249,250,1) 85%, rgba(255,255,255,1) 86%, rgba(247,250,251,1) 100%, rgba(245,249,250,1) 100%);
+  background: radial-gradient(circle at top,rgba(234,242,245,1) 0%, rgba(244,248,250,1) 14%, rgba(255,255,255,1) 14%, rgba(234,242,245,1) 14%, rgba(244,248,250,1) 25%, rgba(255,255,255,1) 26%, rgba(234,242,245,1) 26%, rgba(244,248,250,1) 38%, rgba(255,255,255,1) 39%, rgba(234,242,245,1) 39%, rgba(242,247,249,1) 54%, rgba(255,255,255,1) 55%, rgba(234,242,245,1) 55%, rgba(255,255,255,1) 76%, rgba(245,249,251,1) 78%, rgba(245,249,251,1) 82%, rgba(255,255,255,1) 97%, rgba(244,248,250,1) 100%);
 }
 
 .process__header {
@@ -494,7 +517,7 @@
 }
 
 .helpService-gridContainer.first {
-  margin-bottom: 30px;
+  margin: 0 10px 30px 10px;
   display: grid;
   grid-template-columns: minmax(auto,400px) minmax(auto,730px);
   gap: 30px;
@@ -508,7 +531,6 @@
 }
 
 .helpService-item.text {
-  padding: 54px 85px 50px 100px;
   align-items: flex-start;
 }
 
@@ -528,6 +550,7 @@
 }
 
 .helpService-gridContainer.second {
+  margin: 0 10px;
   display: grid;
   grid-template-columns: minmax(auto,730px) minmax(auto,400px);
   gap: 30px;
@@ -560,6 +583,10 @@
 .price-item__txt {
   font-weight: 400;
   line-height: 21px;
+}
+
+.price-phone-direction{
+  display: none;
 }
 
 .table-container{
@@ -737,6 +764,36 @@
 }
 
 @media screen and (max-width: 770px){
+  .process__video {
+    padding: 30px 0;
+  }
+  
+  .video-wrapper {
+    width: 450px;
+    height: 320px;
+    background: transparent url(../assets/images/macbook.png) 0 0 no-repeat;
+    background-size: contain;
+  }
+  
+  .video-container {
+    position: relative;
+    width: 343px;
+    height: 215px;
+    margin-top: 15px;
+  }
+  
+  .video-container__video{
+    left: 53px;
+  }
+  
+  .video-container__btn {
+    top: 70px;
+    left: 205px;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0px 2px 0px 12px rgba(241, 85, 37, 0.2)
+  }
+  
   .process-steps {
     display: flex;
     align-items: flex-start;
@@ -801,7 +858,7 @@
   .header-container {
     max-width: 480px;
     padding-top: 7px;
-    background: radial-gradient(circle at bottom, rgba(255,255,255,1) 12%, rgba(245,249,250,1) 19%, rgba(255,255,255,1) 19%, rgba(245,249,250,1) 33%, rgba(255,255,255,1) 34%, rgba(245,249,250,1) 49%, rgba(255,255,255,1) 50%, rgba(245,249,250,1) 68%, rgba(255,255,255,1) 69%, rgba(245,249,250,1) 85%, rgba(255,255,255,1) 86%, rgba(247,250,251,1) 100%, rgba(245,249,250,1) 100%);
+    background: radial-gradient(circle at 50% 700px, rgba(234,242,245,1) 0%, rgba(244,248,250,1) 14%, rgba(255,255,255,1) 14%, rgba(234,242,245,1) 14%, rgba(244,248,250,1) 25%, rgba(255,255,255,1) 26%, rgba(234,242,245,1) 26%, rgba(244,248,250,1) 38%, rgba(255,255,255,1) 39%, rgba(234,242,245,1) 39%, rgba(242,247,249,1) 54%, rgba(255,255,255,1) 55%, rgba(234,242,245,1) 55%, rgba(255,255,255,1) 76%, rgba(245,249,251,1) 78%, rgba(245,249,251,1) 82%, rgba(244,248,250,1) 100%);
   }
 
   .header {
@@ -957,6 +1014,22 @@
     font-size: 18px;
   }
   
+  .main-intro:after{
+  width: 35vw;
+  }
+
+  .header-container__scroll{
+    left: 46%;
+  }
+
+  .header-container:after {
+    width: 35vw;
+  }
+
+  .technologies{
+    padding-bottom: 58px;
+  }
+
   .technologies__header {
     padding-top: 12px;
     padding-bottom: 22px;
@@ -990,7 +1063,7 @@
   }
   
   .advantagies{
-    padding-top: 48px;
+    padding-top: 0;
     padding-bottom: 12px;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
@@ -1043,7 +1116,6 @@
   
   .process{
     padding-bottom: 62px;
-    background: radial-gradient(circle at top, rgba(255,255,255,1) 5%, rgba(245,249,250,1) 10%, rgba(255,255,255,1) 19%, rgba(245,249,250,1) 24%, rgba(255,255,255,1) 30%, rgba(245,249,250,1) 100%);
   }
   
   .process__header {
@@ -1056,37 +1128,7 @@
     max-width: 380px;
   }
   
-  .process__video {
-    padding: 30px 0;
-  }
-  
-  .video-wrapper {
-    width: 450px;
-    height: 320px;
-    background: transparent url(../assets/images/macbook.png) 0 0 no-repeat;
-    background-size: contain;
-  }
-  
-  .video-container {
-    position: relative;
-    width: 343px;
-    height: 215px;
-    margin-top: 15px;
-  }
-  
-  .video-container__video{
-    left: 53px;
-  }
-  
-  .video-container__btn {
-    top: 70px;
-    left: 205px;
-    width: 40px;
-    height: 40px;
-    box-shadow: 0px 2px 0px 12px rgba(241, 85, 37, 0.2)
-  }
-  
-    .process-start {
+  .process-start {
     flex-direction: column;
     gap: 12px;
     margin: 0 10px;
@@ -1161,7 +1203,7 @@
   .price-container{
     display: flex;
     flex-direction: column;
-    margin-bottom: 72px;
+    margin-bottom: 22px;
     gap: 21px;
     padding: 0;
   }
@@ -1177,6 +1219,13 @@
     text-align: center;
   }
   
+  .price-phone-direction{
+    margin-left: 29px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
   .price-table {
     width: 100vw;
   }
