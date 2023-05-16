@@ -851,6 +851,10 @@
     line-height: 26px;
   }
   
+  .button:hover {
+    box-shadow: none;
+  }
+
   .btn__img {
     margin-left: 7.21px;
   }
