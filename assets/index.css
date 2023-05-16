@@ -535,7 +535,7 @@
 }
 
 .helpService-item__img {
-  max-width: 100%;
+  max-width: 271px;
 }
 
 .helpService-item__heading {
@@ -763,7 +763,7 @@
   margin-right: auto;
 }
 
-@media screen and (max-width: 770px){
+@media screen and (max-width: 768px){
   .process__video {
     padding: 30px 0;
   }
@@ -838,6 +838,49 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
+  }
+
+  .helpService{ 
+    padding-top: 11px;
+    padding-bottom: 11px;
+    border-radius: 40px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .helpService-container{
+    gap: 12px;
+    padding: 10px;
+  }
+  
+  .helpService-gridContainer.first,
+  .helpService-gridContainer.second{
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column; 
+    gap: 12px; 
+  }
+
+  .helpService-item{
+    margin: 0;
+  }
+
+  .helpService-item.text {
+    padding: 38px 23px 37px 20px;
+  }
+  
+  .helpService-item__img {
+    width: 205px;
+  }
+  
+  .helpService-item__heading {
+    font-size: 20px;
+    line-height: 19px;
+  }
+  
+  .helpService-item__paragraph {
+    font-size: 12px;
+    line-height: 17px;
   }
 }
 
@@ -1021,6 +1064,10 @@
   width: 35vw;
   }
 
+  .main-intro__img{
+    max-width: 50%;
+  }
+
   .header-container__scroll{
     left: 46%;
   }
@@ -1152,51 +1199,7 @@
     text-align: center;
   }
   
-  .helpService{ 
-    padding-top: 11px;
-    padding-bottom: 11px;
-    border-radius: 40px;
-    position: relative;
-    z-index: 1;
-  }
-  
-  .helpService-container{
-    gap: 12px;
-    padding: 10px;
-  }
-  
-  .helpService-gridContainer.first,
-  .helpService-gridContainer.second{
-    margin-bottom: 0;
-    display: flex;
-    flex-direction: column; 
-    gap: 12px; 
-  }
 
-  .helpService-item{
-    margin: 0;
-  }
-
-  .helpService-item.text {
-    padding: 38px 23px 37px 20px;
-  }
-  
-  .helpService-item__img {
-    width: 300px;
-    height: auto;
-    padding: 35px 50px;
-    align-self: center;
-  }
-  
-  .helpService-item__heading {
-    font-size: 20px;
-    line-height: 19px;
-  }
-  
-  .helpService-item__paragraph {
-    font-size: 12px;
-    line-height: 17px;
-  }
   
   .price__heading {
     width: 80%;
@@ -1353,7 +1356,11 @@
   
 }
 
-@media screen and (max-width: 454px) {
+@media screen and (max-width: 450px) {
+  .benefits {
+    display: flex;
+  }
+
   .process-video{
     display: none;
   }
