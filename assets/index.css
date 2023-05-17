@@ -708,15 +708,15 @@
   background-color: #22253B;
 }
 
-.footer-nav__list{
+.footer-menu__nav__list{
   list-style-type: none;
 }
 
-.footer-nav__item {
+.footer-menu__nav__list__item {
   margin-bottom: 25px;
 }
 
-.footer-nav__link {
+.footer-menu__nav__list__link {
   text-decoration: none;
   font-size: 13px;
   line-height: 104.4%;
@@ -1009,7 +1009,7 @@
     color: #000000;
   }
 
-  .modal__nav {
+  .modal-nav__list {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -1199,8 +1199,6 @@
     text-align: center;
   }
   
-
-  
   .price__heading {
     width: 80%;
     padding-top: 120px;
@@ -1319,11 +1317,11 @@
     justify-content: center;
   }
 
-  .footer-nav__list{
+  .footer-menu__nav__list{
     margin-top: 43px;
   }
 
-  .footer-nav__item {
+  .footer-menu__nav__list__item {
     margin-bottom: 25px;
     text-align: center;
   }
@@ -1356,7 +1354,7 @@
   
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 454px) {
   .benefits {
     display: flex;
   }
